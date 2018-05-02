@@ -27,8 +27,6 @@ JS：
 	});
 </script>
 
-# 编译
-npm run build
 ```
 
 预览地址：https://cj814.github.io/NumInput/index.html

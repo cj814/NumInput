@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>numInput</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		.test{
+			width: 200px;
+			float: left;
+			margin-right: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="test">
+		<input type="text" class="form-control" placeholder="请输入数量" id="number1">
+	</div>
+	<div class="test">
+		<input type="text" class="form-control" placeholder="请输入数量" id="number2">
+	</div>
+	<div class="test">
+		<input type="text" class="form-control" placeholder="请输入数量" id="number3">
+	</div>
+	
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/numInput.js"></script>
+	<script>
+		$("#number1").numInput();
+
+		$("#number2").numInput({
+			placement : "right",
+		});
+
+		$("#number3").numInput({
+			placement : "left",
+			readonly : false
+		});
+	</script>
+</body>
+</html>
